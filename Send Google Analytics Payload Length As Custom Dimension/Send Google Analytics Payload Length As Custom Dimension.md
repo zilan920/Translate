@@ -1,3 +1,5 @@
+> [文章地址](https://www.simoahava.com/analytics/send-google-analytics-payload-length-as-custom-dimension/)
+
 Maybe you knew this, maybe you didn’t, but requests sent from your website (or app) to Google Analytics have a maximum size. Or, more specifically, the payload size (meaning the actual content body of the request) has a maximum.
 
 This maximum size of the payload is 8192 bytes. This means, basically, that the entire parameter string sent to Google Analytics servers can be no longer than 8192 characters in length. The thing is, if the payload exceeds this, Google Analytics simply drops the hit. There’s no warning, no error, nothing. The hit just doesn’t get sent. If you are running the Google Analytics debugger browser extension, you can actually see a warning when the payload size is exceeded:
